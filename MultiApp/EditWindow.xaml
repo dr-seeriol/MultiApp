@@ -1,0 +1,30 @@
+﻿<Window x:Class="MultiApp.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MultiApp"
+        mc:Ignorable="d"
+        Title="EditWindow" Height="450" Width="800">
+    <DockPanel  >
+        <StackPanel Orientation="Vertical" Margin="30">
+            
+            <Label Content="First Name" HorizontalAlignment="Center"></Label>
+            <TextBox x:Name="FirstNameBox" Text="Evil" Width="120" Padding="4" Margin="10"></TextBox>
+           
+            <Label Content="Age" HorizontalAlignment="Center"></Label>
+            <TextBox x:Name="AgeBox" Text="700" Width="120" Padding="4" Margin="10"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Margin="30">
+            <Label Content="Last Name" HorizontalAlignment="Center"></Label>
+            <TextBox x:Name="LastNameBox" Text="Wizard" Width="120" Padding="4" Margin="10"></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" DockPanel.Dock="Bottom">
+            <Button Content="Finish" Padding="20"  Height="58" Width="100" Margin="20" Click="FinishButton"/>
+            <Button Content="Cancel" Padding="20"  Height="58" Width="100" Margin="20" Click="CancelButton"/>
+
+        </StackPanel>
+        
+
+    </DockPanel>
+</Window>
